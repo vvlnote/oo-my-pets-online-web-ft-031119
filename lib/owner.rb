@@ -80,17 +80,8 @@ class Owner
   end
   
   def list_pets
-    count = pets.keys.length
-    i = 0
+
     str = "I have "
-    while i < count do
-      if i == (count - 1)
-        str = str + "and #{pets[pets.keys[i]].length} #{pets.keys[i].to_s}."
-      else 
-        str = str + "#{pets[pets.keys[i]].length} #{pets.keys[i].to_s}, "
-      end
-      i += 1
-    end
-    "I have 2 fish, 3 dog(s), and 1 cat(s)."
+ 
   end
 end
